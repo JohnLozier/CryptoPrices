@@ -1,0 +1,46 @@
+HTML {
+    height: 300px;
+    width: 316px;
+    scrollbar-width: none;
+    overflow: auto;
+}
+body {
+    height: 300px;
+    width: 300px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: 'Roboto', sans-serif;
+    overflow: auto;
+    margin-top: 0px;
+    font-size: 14px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+.crypto {
+    height: 40px;
+}
+.cryptotexttop {
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+    font-weight: 200;
+    margin: 0px;
+}
+.cryptotextbottom {
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 0px;
+}
+.info {
+    align-items: start;
+    display: inline-grid;
+    vertical-align: text-bottom;
+}
+.change {
+    float: right;
+}
+.changeper {
+    margin: 0;
+    font-weight: 100;
+}
