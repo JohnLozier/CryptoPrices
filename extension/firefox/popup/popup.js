@@ -1,4 +1,24 @@
 var prices;
+
+if (localStorage.getItem("backgroundColor") == "white") {
+    document.body.style.backgroundColor = "white";
+} else if (localStorage.getItem("backgroundColor") == "black") {
+    document.body.style.backgroundColor = "#35393e";
+} else {
+    document.body.style.backgroundColor = "white";
+    localStorage.setItem("backgroundColor", "white");
+}
+
+document.body.addEventListener("click", function onclick() {
+    if (localStorage.getItem("backgroundColor") == "black") {
+        document.body.style.backgroundColor = "white";
+        localStorage.setItem("backgroundColor", "white");
+    } else {
+        document.body.style.backgroundColor = "#35393e";
+        localStorage.setItem("backgroundColor", "black");
+    }
+});
+
 const getPrice = () => {
     fetch('https://data.messari.io/api/v1/assets?fields=slug,symbol,metrics/market_data/price_usd,metrics/market_data/percent_change_usd_last_24_hours').then(data => {
         data.json().then(data => data.data).then(data => {
@@ -6,6 +26,7 @@ const getPrice = () => {
         })
     })
 }
+
 function rounddata(data) {
     if ((data)[i].metrics.market_data.price_usd.toString().split(".")[0] > 2) {
         var round = Math.round((data)[i].metrics.market_data.price_usd).toString();
@@ -23,6 +44,7 @@ function rounddata(data) {
     }
     return "$" + round
 }
+
 function cryptoname(data) {
     var slug;
     slug = (data)[i].slug
@@ -37,6 +59,7 @@ function cryptoname(data) {
     }
     return slug
 }
+
 function changeper(data) {
     var round = Math.round(100*(data)[i].metrics.market_data.percent_change_usd_last_24_hours)/100;
     round = round.toString();
@@ -61,6 +84,7 @@ function changeper(data) {
     }
     return round + "%";
 }
+
 function inject(data) {
     for (i = 0; i in (data); i++) { 
         var img = document.getElementsByClassName("cryptoimage")[i]
@@ -77,10 +101,10 @@ function inject(data) {
         changepercent.innerText = changeper(data);
         changepercent.style.color = "#059605";
         if (changepercent.innerText.includes("-")) {
-            changepercent.style.color = "#e00000";
+            changepercent.style.color = "#ca0000";
         }
         if (changepercent.innerText == "0%") {
-            changepercent.style.color = "#797979";
+            changepercent.style.color = "#00bb00";
         }
 
         var textbottom = document.getElementsByClassName("cryptotextbottom")[i];

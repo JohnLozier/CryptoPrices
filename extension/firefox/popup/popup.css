@@ -18,7 +18,9 @@ body::-webkit-scrollbar {
     display: none;
 }
 .crypto {
-    height: 40px;
+    height: 45px;
+    background: #898d92d1;
+    border-radius: 10px;
 }
 .cryptotexttop {
     display: inline-block;
@@ -35,12 +37,19 @@ body::-webkit-scrollbar {
 .info {
     align-items: start;
     display: inline-grid;
-    vertical-align: text-bottom;
+    vertical-align: top;
 }
 .change {
     float: right;
+    margin-right: 5px;
 }
 .changeper {
     margin: 0;
     font-weight: 100;
+}
+img {
+    vertical-align: bottom;
+}
+body {
+    cursor: pointer;
 }
