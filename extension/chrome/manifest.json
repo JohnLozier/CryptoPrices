@@ -1,6 +1,6 @@
 {
-    "name": "Crypto Price Shower",
-    "version": "1.0",
+    "name": "Crypto Price",
+    "version": "1.1",
     "manifest_version": 2,
     "description": "Allows you to easily check crypto prices.",
     "homepage_url": "https://github.com/J-Coding-Dev/Crypto-Price",
