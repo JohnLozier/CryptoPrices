@@ -6,5 +6,7 @@
 <img alt="Chrome Downloads" scr="https://img.shields.io/chrome-web-store/users/aijcmfbomlkfaclgjpphidgoijibeobj?color=yellow&label=Chrome%20Downloads">
 </div>
 
-A chrome and firefox extension that shows current crypto prices.
-You can download it for <a href="https://chrome.google.com/webstore/detail/crypto-price-shower/aijcmfbomlkfaclgjpphidgoijibeobj?hl=en&authuser=0">chrome<a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/crypto-price/">firefox<a>
+<br>
+
+<p align="center">A chrome and firefox extension that shows current crypto prices.</p>
+<p align="center">You can download it for <a href="https://chrome.google.com/webstore/detail/crypto-price-shower/aijcmfbomlkfaclgjpphidgoijibeobj?hl=en&authuser=0">chrome<a> and <a href="https://addons.mozilla.org/en-US/firefox/addon/crypto-price/">firefox</a></p>
