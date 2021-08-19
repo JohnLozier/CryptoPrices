@@ -1,7 +1,9 @@
 # Crypto-Price
 <div align="center">
-<img alt="Chrome Web Store" scr="https://img.shields.io/amo/rating/crypto-price?color=orange&label=Firefox%20Rating">
+<img alt="Mozzila Addons" scr="https://img.shields.io/amo/rating/crypto-price?color=orange&label=Firefox%20Rating">
+<img alt="Firefox Downloads" scr="https://img.shields.io/amo/users/crypto-price?color=orange&label=Firefox%20Downloads">
 <img alt="Chrome Web Store" scr="https://img.shields.io/chrome-web-store/rating/aijcmfbomlkfaclgjpphidgoijibeobj?color=yellow&label=Chrome%20Rating">
+<img alt="Chrome Downloads" scr="https://img.shields.io/chrome-web-store/users/aijcmfbomlkfaclgjpphidgoijibeobj?color=yellow&label=Chrome%20Downloads">
 </div>
 
 A chrome and firefox extension that shows current crypto prices.
