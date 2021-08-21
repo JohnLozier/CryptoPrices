@@ -49,6 +49,7 @@ body::-webkit-scrollbar {
 }
 img {
     vertical-align: bottom;
+    padding-left: 5px;
 }
 body {
     cursor: pointer;

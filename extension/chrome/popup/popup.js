@@ -81,12 +81,12 @@ function inject(data) {
 
         var changepercent = document.getElementsByClassName("changeper")[i];
         changepercent.innerText = changeper(data);
-        changepercent.style.color = "#059605";
+        changepercent.style.color = "#00da00";
         if (changepercent.innerText.includes("-")) {
             changepercent.style.color = "#ca0000";
         }
         if (changepercent.innerText == "0%") {
-            changepercent.style.color = "#6b6b6b";
+            changepercent.style.color = "#545454";
         }
 
         var textbottom = document.getElementsByClassName("cryptotextbottom")[i];
