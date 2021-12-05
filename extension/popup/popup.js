@@ -89,6 +89,7 @@ const coinPreview = (name) => {
 			data: {
 			  	labels: keys,
 			  	datasets: [{ 
+					label: '7 Days',
 					data: data["market_data"]["sparkline_7d"]["price"],
 					borderColor: data["market_data"]["sparkline_7d"]["price"][0] < data["market_data"]["sparkline_7d"]["price"][data["market_data"]["sparkline_7d"]["price"].length - 1] ? 'green' : data["market_data"]["sparkline_7d"]["price"][0] - data["market_data"]["sparkline_7d"]["price"][data["market_data"]["sparkline_7d"]["price"].length - 1] == 0 ? 'gray' : 'red',
 					pointRadius: false,
@@ -112,10 +113,7 @@ const coinPreview = (name) => {
 				tooltips: {
 					mode: 'index',
 					axis: 'y',
-					intersect: false,
-				},
-				interaction: {
-					mode: 'point'
+					intersect: false
 				},
 				padding: 0,
 			}
