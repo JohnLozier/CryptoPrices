@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<link rel="stylesheet" href="popup.css">
+<body>
+    <div id="coin-preview-background" class="hidden"></div>
+    <div class="hidden" id="coin-preview">
+        <h3 id="coin-preview-name"></h3>
+        <canvas id="coin-preview-chart" width="200" height="200"></canvas>
+        <div id="coin-preview-link-container">
+            <div class="coin-preview-link-sub-container">
+                <a class="coin-preview-links" id="homepage" target="_blank"><img class="coin-preview-link-images" height="50" width="50"></a>
+                <h3 class="coin-preview-link-text">Homepage</h3>
+            </div>
+            <div class="coin-preview-link-sub-container">
+                <a class="coin-preview-links" id="subreddit" target="_blank"><img class="coin-preview-link-images" height="50" width="50"></a>
+                <h3 class="coin-preview-link-text">Subreddit</h3>
+            </div>
+            <div class="coin-preview-link-sub-container">
+                <a class="coin-preview-links" id="github" target="_blank"><img class="coin-preview-link-images" height="50" width="50"></a>
+                <h3 class="coin-preview-link-text">Github</h3>
+            </div>            
+        </div>
+    </div>
+    <div id="fixed-container">
+        <img id="color-mode" src="../assets/img/moon.png">
+        <img id="space-mode" src="../assets/img/expand.png">
+    </div>
+    <div id="container"></div>
+</body>
+<script src="popup.js" charset="utf-8"></script>
+</html>
