@@ -1,4 +1,4 @@
-# Crypto-Price
+# Crypto Prices
 <div align="center">
 <a href="https://addons.mozilla.org/en-US/firefox/addon/cryptoprices/"><img alt="Firefox Rating" scr="https://img.shields.io/amo/rating/cryptoprices?color=orange&label=Firefox%20Rating&logo=firefox"></a>
 <a href="https://addons.mozilla.org/en-US/firefox/addon/cryptoprices/"><img alt="Firefox Users" scr="https://img.shields.io/amo/users/cryptoprices?color=orange&label=Firefox%20Users&logo=firefox"></a>
