@@ -1,6 +1,6 @@
 {
 	"name": "Crypto Prices",
-	"version": "2.0",
+	"version": "2.1",
 	"manifest_version": 2,
 	"description": "Allows you to easily check crypto prices without having to open seperate tabs.",
 	"homepage_url": "https://github.com/J-The-Dev/CryptoPrices",
@@ -10,6 +10,5 @@
 	"permissions": ["storage"],
 	"icons": { "16": "assets/icons/icon-16.png",
 					 		"64": "assets/icons/icon-64.png",
-							"128": "assets/icons/icon-128.png" },
-	"content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js; object-src 'self'"
+							"128": "assets/icons/icon-128.png" }
 }
