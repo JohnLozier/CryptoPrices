@@ -2,10 +2,9 @@
 HTML {
     height: 400px;
     width: 300px;
-    overflow: scroll;
+    overflow: hidden scroll;
     margin: 0px;
     scrollbar-width: none;
-    overflow: hidden;
 }
 
 body {
@@ -13,7 +12,7 @@ body {
     margin: 0px;
     width: 300px;
     height: 400px;
-    overflow: scroll;
+    overflow: hidden scroll;
     background-color: var(--background-color)
 }
 
@@ -23,7 +22,7 @@ body::-webkit-scrollbar {
 
 #container {
     transition: filter 0.3s linear;
-    width: 100%;
+    width: 300px;
     height: 100%;
 }
 
