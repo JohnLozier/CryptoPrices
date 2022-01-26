@@ -1,6 +1,6 @@
 {
 	"name": "Crypto Prices",
-	"version": "2.2.1",
+	"version": "2.3",
 	"manifest_version": 2,
 	"description": "Allows you to easily check crypto prices without having to open seperate tabs.",
 	"homepage_url": "https://github.com/J-The-Dev/CryptoPrices",
