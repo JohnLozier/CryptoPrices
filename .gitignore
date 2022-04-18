@@ -1,2 +1,5 @@
 *.TMP
-extension/firefox.zip
+firefox.zip
+dist
+node_modules
+sc.zip

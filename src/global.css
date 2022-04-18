@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@700&family=Open+Sans&display=swap");
+
+body, html {
+	margin: 0;
+	width: 300px;
+	height: 400px;
+	overflow: hidden scroll;
+	scrollbar-width: none;
+}
+
+body::-webkit-scrollbar, html::-webkit-scrollbar {
+	display: none;
+}
+
+#React-Container {
+	background: var(--theme-background);
+	width: 100%;
+	min-height: 100%;
+}

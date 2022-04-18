@@ -1,0 +1,16 @@
+{
+	"name": "Crypto Prices",
+	"version": "3.0",
+	"manifest_version": 3,
+	"description": "Easily check crypto prices quickly and conveniently with a popup, search, 7 day graph, and useful links.",
+	"homepage_url": "https://github.com/J-The-Dev/CryptoPrices",
+	"action": {
+		"default_icon": {
+			"16": "assets/16.png",
+			"64": "assets/64.png",
+			"128": "assets/128.png"
+		},
+		"default_popup": "src/index.html"
+	},
+	"permissions": [ "storage" ]
+}

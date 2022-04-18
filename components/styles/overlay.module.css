@@ -1,0 +1,67 @@
+#alignment {
+	display: flex;
+	width: 300px;
+	height: 400px;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	top: 0;
+	left: 0;
+	z-index: 2;
+    cursor: pointer;
+    transition: opacity 0.3s linear;
+}
+
+#container {
+    width: 200px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    background: var(--theme-popup);
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+}
+
+#name {
+    font-family: "Open Sans";
+    margin: 10px 0 0 0;
+    align-self: center;
+    text-shadow: 0 3px 0 #9c9c9c;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--theme-title);
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
+}
+
+#price {
+    align-self: center;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+#links {
+    margin: 10px 0 0 0;
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.link {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.link > svg {
+    fill: var(--theme-text);
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}

@@ -1,0 +1,58 @@
+#container {
+	transition: filter 0.5s ease-in-out;
+}
+
+.container {
+	cursor: pointer;
+	font-family: "Montserrat";
+    height: fit-content;
+	font-weight: 100;
+    width: 100%;
+    display: grid;
+	grid-template-columns: auto auto 1fr;
+	grid-template-areas: "image name percentage"
+						 "image price price";
+}
+
+.image {
+    margin: 5px;
+    border-radius: 10px;
+	width: 45px;
+	height: 45px;
+	align-self: center;
+	grid-area: image;
+}
+
+.name {
+    font-size: 16px;
+	margin: 0;
+	align-self: end;
+	grid-area: name;
+	color: var(--theme-text);
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.price {
+	font-size: 14px;
+    margin: 0;
+	align-self: start;
+	grid-area: price;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.percentage {
+	font-size: 14px;
+    margin: 5px 10px 0 0;
+	width: fit-content;
+	justify-self: end;
+	grid-area: percentage;
+}
+
+.line {
+	height: 1px;
+    width: 80%;
+	margin: var(--mode-spacing) 10%;
+    background: gray;
+}
