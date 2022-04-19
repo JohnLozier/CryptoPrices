@@ -22,7 +22,7 @@ const Overlay = ({ container, searchContainer }) => {
 	}, [state])
 
 	return (
-		<div id={ styles.alignment } style={{ opacity: state.shown ? "1" : "0", visibility: state.shown ? "visible" : "hidden" }} onClick={ () => { updateState({ type: "update", name: undefined, shown: false }); updateData({ image: { small: "" }, links: { subreddit_url: "", repos_url: { github: [ "" ] }, homepage: [ "" ] }, name: "" }) } }>
+		<div id={ styles.alignment } style={{ opacity: state.shown ? "1" : "0", visibility: state.shown ? "visible" : "hidden" }} onClick={ (e) => { e.target == e.currentTarget ? updateState({ type: "update", name: undefined, shown: false }) : null; e.target == e.currentTarget ? updateData({ image: { small: "" }, links: { subreddit_url: "", repos_url: { github: [ "" ] }, homepage: [ "" ] }, name: "" }) : null; } }>
 			<div id={ styles.container }>
 				<h2 id={ styles.name }>{ data?.name }</h2>
 				{

@@ -64,6 +64,11 @@ const Chart = ({ sparkline, shown }) => {
 					plugins: {
 						legend: {
 							display: false
+						},
+						tooltip: {
+							callbacks: {
+							  	label: ({ raw }) => { return `$${ raw }` }
+							}
 						}
 					},
 					interaction: {
