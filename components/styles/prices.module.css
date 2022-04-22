@@ -1,5 +1,15 @@
 #container {
 	transition: filter 0.5s ease-in-out;
+	display: flex;
+	flex-direction: column;
+}
+
+#loading {
+	width: 100px;
+	height: 100px;
+	margin: 122.5px 100px;
+	color: var(--theme-search);
+	animation: rotate 1s linear infinite;
 }
 
 .container {
@@ -55,4 +65,10 @@
     width: 80%;
 	margin: var(--mode-spacing) 10%;
     background: gray;
+}
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
 }

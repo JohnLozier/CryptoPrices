@@ -4,9 +4,11 @@ import { AppContext } from '../src/index';
 
 import styles from "./styles/prices.module.css";
 
+import Loading from "../assets/loading.svg";
+
 const Prices = ({ container }) => {
 
-	const [data, updateData] = useState();
+	const [data, updateData] = useState(<Loading id={ styles.loading }/>);
 	const {state, updateState} = useContext(AppContext);
 
 	useEffect(() => {

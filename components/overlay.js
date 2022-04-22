@@ -30,9 +30,9 @@ const Overlay = ({ container, searchContainer }) => {
 				}
 				<Chart sparkline={ data?.market_data?.sparkline_7d.price.map(value => { return value >= 100 ? Math.round(value) : parseFloat(value.toPrecision(3)) }) } shown={ state.shown }/>
 				<div id={ styles.links }>
-					{ data?.links?.repos_url.github[0] ? <a className={ styles.link } href={ data?.links?.repos_url.github[0] }><Github/></a> : null }
-					{ data?.links?.homepage[0] ? <a className={ styles.link } href={ data?.links?.homepage[0] }><img className={ styles.logo } src={ data?.image?.small }/></a> : null }
-					{ data?.links?.subreddit_url ? <a className={ styles.link } href={ data?.links?.subreddit_url }><Reddit/></a> : null }
+					{ data?.links?.repos_url.github[0] ? <a className={ styles.link } href={ data?.links?.repos_url.github[0] } target="_blank" rel="noopener noreferrer"><Github/></a> : null }
+					{ data?.links?.homepage[0] ? <a className={ styles.link } href={ data?.links?.homepage[0] } target="_blank" rel="noopener noreferrer"><img className={ styles.logo } src={ data?.image?.small }/></a> : null }
+					{ data?.links?.subreddit_url ? <a className={ styles.link } href={ data?.links?.subreddit_url } target="_blank" rel="noopener noreferrer"><Reddit/></a> : null }
 				</div>
 			</div>
 		</div>
